@@ -1,0 +1,1 @@
+Some of the saved model files in the 'Saved_Models' folder are not uploaded due to heavy size, run the colab notebooks under the folder named 'Colab_Notebooks' with names ending as 'version_1' to get the required models and put them in the 'Saved_Models' folder before running the app.
