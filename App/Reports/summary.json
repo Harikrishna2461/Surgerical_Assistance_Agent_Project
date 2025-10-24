@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "n_frames": 42,
+    "inst_counts": [
+      [
+        "irrigator",
+        36
+      ],
+      [
+        "bipolar",
+        4
+      ],
+      [
+        "grasper",
+        3
+      ]
+    ],
+    "phase_counts": [
+      [
+        "gallbladder-dissection",
+        23
+      ],
+      [
+        "gallbladder-extraction",
+        19
+      ]
+    ],
+    "targ_counts": [
+      [
+        "liver",
+        21
+      ],
+      [
+        "specimen_bag",
+        21
+      ],
+      [
+        "fluid",
+        7
+      ]
+    ],
+    "action_counts": [
+      [
+        "null_verb",
+        23
+      ],
+      [
+        "irrigate",
+        9
+      ],
+      [
+        "grasp",
+        8
+      ],
+      [
+        "retract",
+        1
+      ],
+      [
+        "cut",
+        1
+      ]
+    ],
+    "vitals": {
+      "MAP_mean": 82.75214285714284,
+      "MAP_std": 2.2597171501405775,
+      "SpO2_mean": 98.32071428571429,
+      "SpO2_std": 0.07225592271466068,
+      "ETCO2_mean": 34.137619047619054,
+      "ETCO2_std": 0.11332232839727034
+    },
+    "flags": {
+      "low_MAP_frames": 0,
+      "high_MAP_frames": 0,
+      "low_SpO2_frames": 0,
+      "low_ETCO2_frames": 0,
+      "high_ETCO2_frames": 0,
+      "low_MAP_pct": 0.0,
+      "high_MAP_pct": 0.0,
+      "low_SpO2_pct": 0.0,
+      "low_ETCO2_pct": 0.0,
+      "high_ETCO2_pct": 0.0
+    }
+  },
+  "meta": {
+    "video_name": "A-gallbladder-torsion-presenting-as-acute-cholecystitis-in-an-elderly-woman-A-case-report-1752-1947-5-588-S1.ogv.360p.vp9.mp4"
+  }
+}
