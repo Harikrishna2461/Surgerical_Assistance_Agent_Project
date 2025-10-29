@@ -341,18 +341,18 @@ with left:
 
     with c_llm:
         st.markdown("<div class='glass'>", unsafe_allow_html=True)
-        st.subheader("LLM Backend (non-OpenAI)")
+        st.subheader("LLM Backend")
         backend = st.selectbox("Backend", ["groq", "llamacpp"], index=0)
         groq_model = st.selectbox("Groq model", ["llama-3.1-8b-instant","mixtral-8x7b-instruct"])
         gguf_path  = st.text_input("GGUF path (for llama.cpp)", value="")
         top_k = st.slider("Guideline snippets (top-k)", 1, 8, 4)
-        st.caption("Set GROQ_API_KEY for Groq; provide a real .gguf for llama.cpp.")
+        #st.caption("Set GROQ_API_KEY for Groq; provide a real .gguf for llama.cpp.")
         st.markdown("</div>", unsafe_allow_html=True)
 
     with c_vitals:
         st.markdown("<div class='glass'>", unsafe_allow_html=True)
-        st.subheader("Vitals scaling (optional)")
-        use_denorm = st.checkbox("Convert outputs to real units with TRAIN stats", value=False)
+        st.subheader("Vitals scaling")
+        use_denorm = st.checkbox("Convert outputs to real units with DB stats", value=False)
         y_mean = y_std = None
         if use_denorm:
             y_mean_str = st.text_input("y_mean [MAP, SpO2, ETCO2]", "92.3,97.8,33.1")
