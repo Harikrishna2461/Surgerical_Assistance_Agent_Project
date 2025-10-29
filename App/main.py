@@ -299,7 +299,7 @@ left, mid, right = st.columns([0.70, 0.02, 0.30], gap="large")
 
 # ===== LEFT pane =====
 with left:
-    st.markdown("### Upload inputs")
+    st.markdown("### Upload Inputs")
 
     c_vid, c_ecg = st.columns([1,1], gap="large")
     with c_vid:
