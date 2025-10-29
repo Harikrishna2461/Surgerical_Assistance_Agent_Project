@@ -71,7 +71,7 @@ def _llm_groq(prompt: str, model: str) -> str:
     """
     Fast hosted LLM via Groq. Requires env var GROQ_API_KEY.
     """
-    api_key = "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"
+    api_key = "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" #"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"
     if not api_key:
         return "Insight: (GROQ_API_KEY not set; cannot generate LLM insight)."
     try:
@@ -80,7 +80,7 @@ def _llm_groq(prompt: str, model: str) -> str:
         resp = client.chat.completions.create(
             model=model,
             messages=[
-                {"role":"system","content":"You are a surgical assistant. Be concise. Safety-oriented, non-diagnostic guidance only."},
+                {"role":"system","content":"You are a surgical assistant. Be concise. Safety-oriented, non-diagnostic guidance only. Strictly do not give two insights by using the word 'or' in between and be very clear"},
                 {"role":"user","content":prompt[:6000]},
             ],
             temperature=0.2,
